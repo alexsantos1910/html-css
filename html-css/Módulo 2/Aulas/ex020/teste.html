@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de conhecimento</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function exibirImagem(nomeImagem) {
+	        const imagem = document.getElementById("imagem");
+	        imagem.src = nomeImagem;
+        }
+    </script>
+</head>
+<body>
+    <div id="interface">
+        <h1>BIOMAS BRASILEIROS</h1>
+        <p>Nosso país podemos encontrar 3 tipos de biomas: Amazônia, Mata Atlântica, Cerrado. Nossos Biomas são importantes não somente como recursos naturais em nosso país, mas, tem destaque como ambientes de grande riqueza natural no planeta.</p>
+        <div id="img-centro">
+            <img src="mapa-brasil.jpg" alt="mapa-brasil" id="foto-principal" >
+        </div>
+        <h2>Três maiores biomas Brasileiro</h2>
+        <div id="botoes">
+            <button onclick="exibirImagem('amazonas.jpg')" class="botao">Amazônas</button>
+            <button onclick="exibirImagem('atlantica.jpg')" class="botao">Mata Atlântica</button>
+            <button onclick="exibirImagem('cerrado.jpg')" class="botao">Cerrado Brasileiro</button>
+            <br><br>
+        </div>
+        <img id="imagem" src="amazonas.jpg">
+    </div>
+    
+</body>
+</html>

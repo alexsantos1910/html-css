@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Flexível</title>
+    <link rel="shortcut icon" href="imagens/icon.ico" type="image/x-icon">
+    <style>
+        h1 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        img {
+            margin: 0px auto;
+            display: block;
+        }
+        body {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Você está venda a imagem completa? Experimente ampliar o tamanho da sua janela 
+    para aproveitar a melhor experiência.&#x1F60A;</p>
+    <picture>
+        <source media="(max-width:600px )" srcset="imagens/paisagem-p.png" type="image/png">
+        <source media="(max-width:950px )" srcset="imagens/paisagem-m.png" type="image/png">
+        <img src="imagens/paisagem-g.png" alt="imagem flexível">
+    </picture>
+</body>
+</html>
